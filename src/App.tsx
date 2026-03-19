@@ -53,7 +53,7 @@ export default function App() {
           <div className="hero-copy">
             <div className="template-pill">
               <Sparkles size={14} />
-              Plug-and-Play Project Page
+              MSIS 522 — University of Washington
             </div>
             <h1>{projectData.title}</h1>
             <p className="owner-line">{projectData.ownerLine}</p>
@@ -91,8 +91,8 @@ export default function App() {
               <FileText size={22} />
             </div>
             <div>
-              <p className="instruction-title">How students should use this page</p>
-              <p className="instruction-subtitle">Fill in the content, keep the overall layout and pacing.</p>
+              <p className="instruction-title">How to experience LinkedOut</p>
+              <p className="instruction-subtitle">A live AI avatar you can talk to — no scheduling required.</p>
             </div>
           </div>
 
@@ -168,8 +168,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Team"
-            title="Show who built it and what each person owned"
-            description="This section should read like a real team build, not just a list of names. Make ownership specific."
+            title="Who built LinkedOut"
+            description="Four students from the UW MSIS program."
           />
           <div className="card-grid two-up">
             {projectData.members.map((member) => (
@@ -177,7 +177,7 @@ export default function App() {
                 <div className="team-avatar">{member.name.replace(/[[\]]/g, '').split(' ').filter(Boolean).map((part) => part[0]).join('').slice(0, 2).toUpperCase() || 'TM'}</div>
                 <div>
                   <h3>{member.name}</h3>
-                  <p className="team-role">{member.role}</p>
+                  {member.role && <p className="team-role">{member.role}</p>}
                   <p className="body-copy compact">{member.focus}</p>
                 </div>
               </div>
@@ -188,8 +188,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Gallery"
-            title="Add screenshots, diagrams, evidence, and visual proof"
-            description="Students can place screenshots, diagrams, PDFs, or photos inside public/project-assets and reference them from the data file."
+            title="See LinkedOut in action"
+            description="Screenshots of the live portfolio and avatar interface, plus the system architecture diagram showing exactly how the real-time pipeline is wired together."
           />
           <div className="card-grid two-up">
             {projectData.gallery.map((item) =>
@@ -223,7 +223,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Stack</p>
-                <h3>Make the stack easy to scan</h3>
+                <h3>What LinkedOut is built on</h3>
               </div>
             </div>
             <div className="stack-list">
@@ -253,7 +253,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Methods</p>
-                <h3>Call out the techniques quickly</h3>
+                <h3>Key techniques powering the experience</h3>
               </div>
             </div>
             <div className="method-grid">
@@ -264,7 +264,7 @@ export default function App() {
                   </div>
                   <div>
                     <p className="method-title">{method}</p>
-                    <p className="method-note">Explain how this method improved speed, quality, or reliability.</p>
+                    <p className="method-note">A core part of the LinkedOut real-time avatar pipeline.</p>
                   </div>
                 </div>
               ))}
@@ -275,8 +275,8 @@ export default function App() {
         <section>
           <SectionHeader
             eyebrow="Product"
-            title="Break the experience into feature cards"
-            description="Each card should explain what the user does, what the system does, and what concrete value the interaction creates."
+            title="What LinkedOut delivers"
+            description="Four distinct experiences — live avatar chat, real-time transcription, secure session management, and a full candidate portfolio — all in a single, fast-loading site."
           />
           <div className="card-grid two-up">
             {projectData.features.map((feature) => (
@@ -307,7 +307,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Architecture</p>
-                <h3>Explain how the system works</h3>
+                <h3>How the real-time pipeline works</h3>
               </div>
             </div>
             <div className="architecture-list">
@@ -330,7 +330,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Code Highlights</p>
-                <h3>Paste short code samples if they help</h3>
+                <h3>Key implementation details</h3>
               </div>
             </div>
             <div className="code-list">
@@ -360,7 +360,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Roadmap</p>
-                <h3>Show momentum and next steps</h3>
+                <h3>Where LinkedOut is headed</h3>
               </div>
             </div>
             <div className="roadmap-list">
@@ -387,7 +387,7 @@ export default function App() {
               </div>
               <div>
                 <p className="eyebrow">Risks</p>
-                <h3>Be honest about constraints</h3>
+                <h3>Risks and how they are managed</h3>
               </div>
             </div>
             <div className="risk-list">
@@ -403,11 +403,11 @@ export default function App() {
 
         <section className="closing-card">
           <div>
-            <p className="dark-eyebrow">Closing Section</p>
-            <h2>End with a clear business case</h2>
+            <p className="dark-eyebrow">The Bottom Line</p>
+            <h2>LinkedOut: a portfolio that talks back</h2>
             <p>
-              The strongest project pages do not stop at “here is our interface.” They explain why the idea matters,
-              how the system is built, what evidence exists today, and what should happen next.
+              The job search is broken for strong communicators who get filtered out before a human ever hears them.
+              LinkedOut fixes that — a live AI avatar, always available, representing the candidate with depth and personality.
             </p>
           </div>
 
@@ -417,28 +417,28 @@ export default function App() {
                 <Users size={18} />
               </div>
               <h3>Who benefits?</h3>
-              <p>State the user, customer, or stakeholder group in plain language.</p>
+              <p>Recruiters and hiring managers get richer signal faster. Candidates get a 24/7 voice — no meeting needed.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Target size={18} />
               </div>
               <h3>What changes?</h3>
-              <p>Explain the operational, financial, or human outcome the project improves.</p>
+              <p>Screening conversations happen on the recruiter's schedule, not the candidate's calendar — eliminating scheduling friction entirely.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Layers3 size={18} />
               </div>
               <h3>Why this build?</h3>
-              <p>Call out the architecture or approach choices that make the solution credible.</p>
+              <p>LiveKit WebRTC + ElevenLabs means the avatar interaction is real-time and lifelike — not a chatbot, not a recording, but a live conversation.</p>
             </div>
             <div className="closing-mini-card">
               <div className="icon-box dark-icon-box">
                 <Rocket size={18} />
               </div>
               <h3>What is next?</h3>
-              <p>Name the next test, launch step, or milestone that turns the prototype into a stronger product.</p>
+              <p>RAG grounding over the candidate's verified documents, recruiter-facing session replays, and a multi-candidate platform for agencies.</p>
             </div>
           </div>
         </section>
