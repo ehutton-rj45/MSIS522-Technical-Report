@@ -112,7 +112,7 @@ export const projectData: ProjectPageData = {
   links: [
     { label: 'Live Demo', url: 'https://github.com/hdksrma/theportfolioproject', primary: true },
     { label: 'GitHub Repo', url: 'https://github.com/hdksrma/theportfolioproject' },
-    { label: 'Technical Report', url: '/project-assets/Technical report.pdf' },
+    { label: 'Technical Report', url: 'https://github.com/ehutton-rj45/MSIS522-Technical-Report/blob/main/public/project-assets/Technical%20report.pdf' },
     { label: 'Slide Deck', url: '/project-assets/MSIS 522 Project_LinkedOut.pptx' },
   ],
 

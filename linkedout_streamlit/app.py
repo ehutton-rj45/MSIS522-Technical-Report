@@ -319,7 +319,7 @@ html("""
   </div>
   <div class="btn-row">
     <a class="btn-primary" href="https://github.com/hdksrma/theportfolioproject" target="_blank">🔗 GitHub Repo</a>
-    <a class="btn-secondary" href="assets/technical_report.pdf" target="_blank">📄 Technical Report</a>
+    <a class="btn-secondary" href="https://github.com/ehutton-rj45/MSIS522-Technical-Report/blob/main/public/project-assets/Technical%20report.pdf" target="_blank">📄 Technical Report</a>
   </div>
 </div>
 """)
