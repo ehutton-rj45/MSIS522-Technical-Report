@@ -4,6 +4,11 @@ This repository is team 7's technical report for MSIS 522.
 
 ## Fast start
 
+View the project here:
+https://msis522--team-7--technical-report.streamlit.app/
+
+Or start it locally yourself:
+
 ```bash
 npm install
 npm run dev
