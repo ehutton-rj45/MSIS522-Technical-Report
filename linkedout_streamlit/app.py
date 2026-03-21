@@ -306,7 +306,7 @@ html("""
 <div class="hero">
   <div class="hero-pill">✦ MSIS 522 — University of Washington</div>
   <h1>LinkedOut</h1>
-  <p class="owner">Hardik Sharma, Aria Wang, Ethan Hutton &amp; Jingying Deng</p>
+  <p class="owner">Hardik Sharma, Aria Wang, Ethan Hutton, Jingying Deng</p>
   <p class="subtitle">An AI-powered interactive portfolio that lets recruiters and hiring teams talk live to a digital avatar of the candidate — anytime, without scheduling.</p>
   <p class="summary">LinkedOut reimagines the job-search portfolio as a two-way conversation. Instead of a static resume page, hiring managers and recruiters visit a personal website and instantly connect with a real-time AI video avatar of the candidate. The avatar is powered by the LiveAvatar API and orchestrated by an ElevenLabs Conversational Agent, streaming audio and video through a LiveKit room so the interaction feels like a live video call. A lightweight Node/Express backend handles session lifecycle securely, while a clean HTML/CSS/JS frontend keeps the experience fast and frictionless. The core insight is that recruiters make decisions on personality and communication as much as credentials — LinkedOut closes that gap by letting candidates "be present" 24/7 without engineering a live meeting.</p>
   <div class="badge-row">
@@ -408,13 +408,13 @@ html("""
 
 team = [
     ("Hardik Sharma",
-     "Built the full Node.js/Express backend, integrated the LiveAvatar API, wired up the LiveKit WebRTC room to carry video, audio, and bidirectional data events, tuned the ElevenLabs agent persona, crafted the context prompts and conversational flow."),
+     "Built and scaled the end-to-end backend infrastructure using Node.js and Express, integrating LiveAvatar and LiveKit WebRTC to enable real-time video, audio, and bidirectional data streaming. Designed and optimized the conversational pipeline, including prompt architecture and voice persona tuning, ensuring low-latency and natural user interactions."),
     ("Aria Wang",
-     "Built the demo day presentation. Synthesized the full project into a compelling narrative for stakeholders, designed the slide deck structure and visual story, and prepared the live demonstration flow for the class presentation."),
+     "Led the overall product narrative and demo strategy, synthesizing complex technical components into a clear and compelling story for stakeholders. Designed the presentation structure, visual flow, and live demonstration experience to effectively communicate the product’s value and use cases."),
     ("Ethan Hutton",
-     "Built the Technical Report based off the professor's template. Documented the project in a structured academic format aligned with MSIS 522 course requirements."),
+     "Owned the technical documentation and system reporting, translating the project into a structured and academically rigorous format aligned with MSIS standards. Ensured clarity, completeness, and reproducibility of the system design and implementation for both technical and non-technical audiences."),
     ("Jingying Deng",
-     "Led the live demonstration during the demo day presentation, showcased the avatar's real-time conversational capabilities to the class, and fielded questions from the audience."),
+     "Owned and led the live product demonstration during demo day, delivering a seamless showcase of the avatar’s real-time conversational capabilities. Translated technical functionality into clear user value, engaged the audience through interactive walkthroughs, and handled live Q&A to reinforce product impact and positioning."),
 ]
 
 t_cols = st.columns(2)
